@@ -1,11 +1,10 @@
-import Prelogin from "./PreLogin";
-
+import Prelogin from "./components/PreLogin";
 
 function App() {
-  return(
+  return (
     <div>
-  <Prelogin/>
-  </div>
+      <Prelogin />
+    </div>
   );
 }
 
