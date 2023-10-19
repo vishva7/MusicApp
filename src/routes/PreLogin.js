@@ -1,6 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Card from "../components/card";
+import Title from "../components/title"; 
 function Prelogin() {
   return (
     <div className="encl">
@@ -11,6 +12,8 @@ function Prelogin() {
         <Navbar />
 
         <Card />
+        {/* <Title/> */}
+
       </div>
     </div>
   );
