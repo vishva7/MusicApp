@@ -1,6 +1,6 @@
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import Card from "./card";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import Card from "../components/card";
 function Prelogin() {
   return (
     <div className="encl">
