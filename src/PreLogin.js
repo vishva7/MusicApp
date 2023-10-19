@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Card from "./card";
 function Prelogin() {
   return (
-    <div className="encl">
+    <div className="encl bg-red-500">
       <div className="div1">
         <Sidebar />
       </div>
