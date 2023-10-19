@@ -11,8 +11,8 @@ function Prelogin() {
       <div className="div2 ml-60 pl-7">
         <Navbar />
 
-        {/* <Card /> */}
-        <Title/>
+        <Card />
+        {/* <Title/> */}
 
       </div>
     </div>
