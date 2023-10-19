@@ -1,4 +1,4 @@
-import Prelogin from "./components/PreLogin";
+import Prelogin from "./routes/PreLogin";
 
 function App() {
   return (
