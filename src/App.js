@@ -4,8 +4,8 @@ import Explore from "./routes/explore";
 function App() {
   return (
     <div className="bg-black">
-      <Prelogin />
-      {/* <Explore/> */}
+      {/* <Prelogin /> */}
+      <Explore/>
     </div>
   );
 }
