@@ -3,7 +3,7 @@ import Explore from "./routes/explore";
 
 function App() {
   return (
-    <div>
+    <div className="bg-black">
       <Prelogin />
       {/* <Explore/> */}
     </div>
