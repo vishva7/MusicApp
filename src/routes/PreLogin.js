@@ -2,6 +2,7 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Card from "../components/card";
 import Title from "../components/title"; 
+import Footer from "../components/footer";
 import {useState} from 'react'; 
 function Prelogin() {
   const [Album,setAlbum]=useState([{title:"Today's Top Hits",body:"Katniss",author:"Drake on top of the Hottest 50!",id:1,img:"/album1.webp"},
@@ -16,7 +17,7 @@ function Prelogin() {
       <div className="encl">
    
    
-      <div className="div1">
+      <div className="div1 z-10">
         <Sidebar />
       </div>
       <div className="div2 ml-60 pl-7">
@@ -24,7 +25,11 @@ function Prelogin() {
 
         <Card Album={Album} id={Album.id}/>
         {/* <Title/> */}
+        
 
+      </div>
+      <div className="z-5">
+      <Footer/>
       </div>
     </div>
     
