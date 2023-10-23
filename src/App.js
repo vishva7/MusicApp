@@ -1,11 +1,11 @@
 import Prelogin from "./routes/PreLogin";
 import Explore from "./routes/explore";
-
 function App() {
   return (
     <div className="bg-black">
-      <Prelogin />
-      {/* <Explore/> */}
+      {/* <Prelogin /> */}
+      <Explore/>
+      
     </div>
   );
 }

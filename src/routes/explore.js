@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Card from "../components/card";
 import SearchCard from "../components/searchCard";
+import Title from "../components/title";
 import {useState} from 'react'; 
 
 function Explore() {
@@ -34,6 +36,21 @@ function Explore() {
   {title:"Rock",id:28, color:'#F037A5'}
 
   ])
+  const [titlecard,setTitlecard]=useState([
+  {title:"Reputation",id:1,img:"/tsrep.png"},
+  {title:"Rap Caviar",id:2,img:"/tsrep.png"},
+  {title:"All Out 2010s",id:3,img:"/tsrep.png"},
+  {title:"Rock Classics",id:4,img:"/tsrep.png"},
+  {title:"Chill Hits",id:5,img:"/tsrep.png"},
+  {title:"Chill Hits",id:5,img:"/tsrep.png"}
+
+  ])
+  const [Album,setAlbum]=useState([{title:"Today's Top Hits",body:"Katniss",author:"Drake on top of the Hottest 50!",id:1,img:"/album1.webp"},
+  {title:"Rap Caviar",body:"Peeta",author:"Music from Lil Tecca,Lil Uzi Vert and Gucci Mane",id:2,img:"/album1.webp"},
+  {title:"All Out 2010s",body:"Prim",author:"The biggest songs of the 2010s",id:3,img:"/album1.webp"},
+  {title:"Rock Classics",body:"Snow",author:"Rock legends & epic songs that continue to inspire",id:4,img:"/album1.webp"},
+  {title:"Chill Hits",body:"Viona",author:"Kick back to the best new and recent chill...",id:4,img:"/album1.webp"}
+  ])
     return ( 
         <div className="encl">
       <div className="div1">
@@ -41,7 +58,13 @@ function Explore() {
       </div>
       <div className="div2 ml-60 pl-7">
         <Navbar/>
-        <SearchCard search={search}/>
+        <div className="pt-12">
+        <Title  titlecard={titlecard}/>
+        </div>
+        <div className="pt-20"> 
+        <Card Album={Album} id={Album.id}/>
+        </div>
+        {/* <SearchCard search={search}/> */}
 
       </div>
     </div>
