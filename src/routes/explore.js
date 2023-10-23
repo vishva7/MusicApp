@@ -59,10 +59,18 @@ function Explore() {
       <div className="div2 ml-60 pl-7">
         <Navbar/>
         <div className="pt-12">
+        <div className="text-white pb-4 text-2xl">
+       <p><b>Good Afternnoon!</b></p>
+      
         <Title  titlecard={titlecard}/>
         </div>
-        <div className="pt-20"> 
+        </div>
+        <div className="pt-12"> 
+        <div className="text-white pb-4 text-3xl">
+       <p><b>Top Mixes:</b></p>
+       
         <Card Album={Album} id={Album.id}/>
+        </div>
         </div>
         {/* <SearchCard search={search}/> */}
 
