@@ -24,12 +24,12 @@ function Prelogin() {
         <Navbar />
 
         <Card Album={Album} id={Album.id}/>
-        {/* <Title/> */}
+        <Title/>
         
 
       </div>
-      <div className="z-5">
-      <Footer/>
+      <div className=" relative z-5">
+      {/* <Footer/> */}
       </div>
     </div>
     
