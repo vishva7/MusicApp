@@ -1,38 +1,38 @@
-import SearchCard from "./components/searchCard";
 import Prelogin from "./routes/PreLogin";
 import Explore from "./routes/explore";
 import SearchPage from "./routes/searchPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useState } from "react";
+import Songlist from "./components/songlist";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  RouterProvider,
+  createBrowserRouter,
+  useNavigate,
+  createRoutesFromElements,
+} from "react-router-dom";
+import RootLayout from "./routes/rootlayout";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Prelogin />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/Prelogin" element={<Prelogin />} />
+        <Route path="/songlist" element={<Songlist />}></Route>
+        <Route path="/searchPage" element={<SearchPage />}></Route>
+      </Route>
+      <Route>
+        <Route path="/loginpage" elem></Route>
+      </Route>
+    </>
+  )
+);
 function App() {
   return (
-    
-    // <Router>
-    //   <Switch>
-    //     <Route exact path="/" component={Explore} />
-    //     <Route exact path="/searchPage" component={SearchPage} />
-    //   </Switch>
-    // </Router>
-    <Router>
-     
-      <div className="content bg-black">
-        <Switch>
-          <Route exact path="/">
-            <Explore />
-          </Route>
-          <Route exact path="/searchPage">
-            <SearchPage />
-          </Route>
-          <Route exact path="/explore">
-          <Explore/>
-          </Route>
-
-        </Switch>
-      </div>
-    </Router>
-
-        
-       
-    
+    <RouterProvider router={router} /> //have to import
   );
 }
 export default App;
