@@ -5,10 +5,10 @@ const Title = ({ titlecard }) => {
         {titlecard.map((TC) => (
           <div
             id="toast-success"
-            class="flex items-center text-gray-500 bg-black rounded-lg shadow text-gray-400 bg-gray-800"
+            class="flex items-center text-gray-500 bg-black p-3 shadow text-gray-400 bg-gray-800"
             role="alert"
           >
-            <div class="ml-[-0.5rem] inline-flex items-center flex-shrink-0  w-14 h-11 ">
+            <div class="ml-[-0.8rem] inline-flex items-center flex-shrink-0  w-16 h-11 ">
               <img src={TC.img}></img>
             </div>
             <div class="ml-3 text-sm font-normal">{TC.title}</div>

@@ -13,6 +13,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import RootLayout from "./routes/rootlayout";
+import Loginpage from "./routes/loginpage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,7 @@ const router = createBrowserRouter(
         <Route path="/searchPage" element={<SearchPage />}></Route>
       </Route>
       <Route>
-        <Route path="/loginpage" elem></Route>
+        <Route path="/loginpage" element={<Loginpage/>}></Route>
       </Route>
     </>
   )
