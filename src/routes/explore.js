@@ -6,6 +6,7 @@ import Title from "../components/title";
 import { useState } from "react";
 import SearchPage from "./searchPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Loginpage from "./loginpage";
 
 function Explore() {
   const [titlecard, setTitlecard] = useState([
@@ -59,7 +60,7 @@ function Explore() {
         <b>Good Afternnoon!</b>
       </p>
       <div>
-        <Title titlecard={titlecard} />
+        {/* <Title titlecard={titlecard} /> */}
       </div>
 
       <div className="pt-12">
@@ -68,7 +69,8 @@ function Explore() {
             <b>Top Mixes:</b>
           </p>
 
-          <Card Album={Album} id={Album.id} />
+          {/* <Card Album={Album} id={Album.id} /> */}
+          <Loginpage/>
         </div>
       </div>
     </div>
