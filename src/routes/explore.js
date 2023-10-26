@@ -58,7 +58,7 @@ function Explore() {
       <p>
         <b>Good Afternnoon!</b>
       </p>
-      <div>
+      <div className="md:block md:w-auto">
         <Title titlecard={titlecard} />
       </div>
 
