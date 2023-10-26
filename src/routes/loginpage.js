@@ -1,5 +1,3 @@
-
-
 const  Loginpage= () => {
     return ( <div>       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
         <div class="relative mb-6">
