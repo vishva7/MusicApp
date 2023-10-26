@@ -9,10 +9,9 @@ const RootLayout = () => {
       </div>
       <div className="div2 relative ml-0 md:ml-60 pl-0 md:pl-7 top-0">
         <Navbar />
-      </div>
-      <div>
         <Outlet />
       </div>
+      
     </div>
   );
 };

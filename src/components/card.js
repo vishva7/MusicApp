@@ -24,7 +24,7 @@ const Card = ({ Album, id }) => {
     <div className="grid grid-cols-5 gap-2">
       {Album.map((Al) => (
         <div
-          className="relative bg-black rounded-lg shadow-lg w-48"
+          className="relative bg-black rounded-lg shadow-lg md:w-48"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={handleClick}

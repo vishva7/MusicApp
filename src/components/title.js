@@ -1,7 +1,7 @@
 const Title = ({ titlecard }) => {
   return (
     <div class="p-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid  grid-cols-3 gap-5 ">
         {titlecard.map((TC) => (
           <div
             id="toast-success"
