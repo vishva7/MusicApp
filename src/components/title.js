@@ -1,11 +1,11 @@
 const Title = ({ titlecard }) => {
   return (
     <div class="p-4">
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid  grid-cols-3 gap-5 ">
         {titlecard.map((TC) => (
           <div
             id="toast-success"
-            class="flex items-center w-[400px] p-2 pr-7 mb-4 text-gray-500 bg-black rounded-lg shadow text-gray-400 bg-gray-800"
+            class="flex items-center text-gray-500 bg-black rounded-lg shadow text-gray-400 bg-gray-800"
             role="alert"
           >
             <div class="ml-[-0.5rem] inline-flex items-center flex-shrink-0  w-14 h-11 ">

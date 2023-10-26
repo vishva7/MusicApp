@@ -22,11 +22,12 @@ const router = createBrowserRouter(
        
         <Route path="/Prelogin" element={<Prelogin />} />
         <Route path="/songlist" element={<Songlist />}></Route>
+        <Route path="/explore" element={<Explore />} />
+
         <Route path="/searchPage" element={<SearchPage />}></Route>
       </Route>
       <Route>
         <Route path="/loginpage" elem></Route>
-        <Route path="/explore" element={<Explore />} />
       </Route>
     </>
   )
