@@ -15,7 +15,7 @@ const Card = ({ Album, id }) => {
   const [isHovered, setIsHovered] = useState(null);
   const history = useNavigate();
   function handleClick() {
-    history("/songlist"); // Replace "/new-page" with the path of the page you want to navigate to
+    history("/playlist"); // Replace "/new-page" with the path of the page you want to navigate to
   }
 
   
