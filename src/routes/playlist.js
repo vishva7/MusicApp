@@ -1,6 +1,7 @@
 import Songlist from "../components/songlist";
 import { useState } from "react";
 const Playlist = () => {
+    
     const [song, setSong] = useState([
         { title: "Are you ready for it?", album: "reputation", date: "13 october", time: "3:11", id: 1, img: "/tsrep.png" },
         { title: "Don't blame me", album: "reputation", date: "13 october", time: "3:11", id: 2, img: "/tsrep.png" },
@@ -13,7 +14,7 @@ const Playlist = () => {
         { title: "Dancing with our hands tied", album: "reputation", date: "13 october", time: "3:11", id: 9, img: "/tsrep.png" },
         ]);
     return ( 
-        <Songlist song={song}/>
+        <Songlist song={song} id={song.id}/>
      );
 }
  
