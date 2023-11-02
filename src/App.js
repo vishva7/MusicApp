@@ -2,7 +2,8 @@ import Prelogin from "./routes/PreLogin";
 import Explore from "./routes/explore";
 import SearchPage from "./routes/searchPage";
 import { useState } from "react";
-import Songlist from "./components/songlist";
+import Playlist from "./routes/playlist";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
         <Route index element={<Prelogin />} />
 
         <Route path="/Prelogin" element={<Prelogin />} />
-        <Route path="/songlist" element={<Songlist />}></Route>
+        <Route path="/playlist" element={<Playlist />}></Route>
         <Route path="/explore" element={<Explore />} />
 
         <Route path="/searchPage" element={<SearchPage />}></Route>

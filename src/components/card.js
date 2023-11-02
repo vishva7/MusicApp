@@ -1,50 +1,45 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
-import {Link} from "react-router-dom";
-import Songlist from "./songlist";
-import {
-  BrowserRouter as Router,
-  Route,Routes,
-  Switch,useNavigate,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ Album, id }) => {
-  const [isHovered, setIsHovered] = useState(null);
+  const [hoveredCardIndex, setHoveredCardIndex] = useState(null);
   const history = useNavigate();
-  function handleClick() {
-    history("/songlist"); // Replace "/new-page" with the path of the page you want to navigate to
-  }
 
-  
+  const handleMouseEnter = (index) => {
+    setHoveredCardIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCardIndex(null);
+  };
+
+  const handleClick = () => {
+    history("/playlist"); // Replace "/new-page" with the path of the page you want to navigate to
+  };
 
   return (
     <div className="grid grid-cols-5 gap-2">
-      {Album.map((Al) => (
+      {Album.map((Al, index) => (
         <div
           className="relative bg-black rounded-lg shadow-lg md:w-48"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
           onClick={handleClick}
+          key={index}
         >
-          
           <div className="px-3 pb-3 pt-3">
             <img
               src={Al.img}
               alt="Card Image"
               className="w-full h-full flex object-cover rounded-t-lg"
             />
-             
-            
-            {isHovered == true ? (
-              <>
-                <div className="play-button absolute top-1 mt-32 ml-[7.8rem] bg-black py-2 px-2 rounded-full">
-                  <BsFillPlayFill color="blue" size={25} />
-                </div>
-              </>
-            ) : null}
+
+            {hoveredCardIndex === index && (
+              <div className="play-button absolute top-1 mt-32 ml-[7.8rem] bg-black py-2 px-2 rounded-full">
+                <BsFillPlayFill color="blue" size={25} />
+              </div>
+            )}
           </div>
 
           <div className="p-2 px-4">
@@ -54,9 +49,9 @@ const Card = ({ Album, id }) => {
             </a>
           </div>
         </div>
-        
       ))}
     </div>
   );
 };
+
 export default Card;

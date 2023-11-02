@@ -6,7 +6,7 @@ const SearchCard = ({ search }) => {
         <div
           //   className={`w-40 h-40 bg-${SE.color} rounded-lg pl-3 pt-3`}
           style={{
-            width: "160px",
+            width:{md:"160px"},
             height: "160px",
             backgroundColor: SE.color,
             borderRadius: "8px",

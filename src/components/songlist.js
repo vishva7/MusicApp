@@ -1,60 +1,67 @@
 import { useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import { BsSuitHeart } from "react-icons/bs";
-const Songlist = () => {
+const Songlist = ({song,index}) => {
+ 
   const [ishover, setHover] = useState(null);
+  const handleentry = (index) => {
+    setHover(index);
+  };
+
+  const handleexit = () => {
+    setHover(null);
+  };
   return (
-    <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+  
+    <div >
+      {song.map((S,songIndex) => (
+    <div className="h-20"
+      onMouseEnter={() => handleentry(songIndex)}
+      onMouseLeave={ handleexit}
+      key={songIndex}
     >
-      {ishover == false ? (
+     
+        
         <div
-          id="alert-1"
-          class="  flex  w-3/4 ml-20 mb-2 p-2 text-white  bg-gray-700 "
+          
+          class="  flex  w-full ml-[-1rem] h-16 mb-2 p-2 text-white  bg-gray-700 "
         >
-          1
-          <div class="ml-[0.7rem] inline-flex items-center flex-shrink-0  w-14 h-11 ">
-            <img src="/tsrep.png"></img>
-          </div>
-          <span class="sr-only">Info</span>
-          <div class="ml-3 text-sm font-medium">Gorgeous Taylor Swift</div>
-          <div className="grid grid-cols-4 gap-48">
-            <div className="ml-40">Reputation</div>
-            <div className="ml-4">13 October</div>
-            <div></div>
-            <div classname="ml-20">
-              <button classname="ml-20">2:11</button>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div
-          id="alert-1"
-          class="  flex  w-3/4 ml-20 mb-2 p-2 text-white  bg-gray-700 "
-        >
-          <div>
+           {ishover == songIndex&& (<div className="w-3 h-2">
             <BsFillPlayFill size={20} />
-          </div>
-          <div class="ml-[0.7rem] inline-flex items-center flex-shrink-0  w-14 h-11 ">
+          </div>)}
+          {ishover != songIndex&& (<div className="w-3 h-2">
+            {S.id}
+          </div>)}
+          <div class="ml-[0.6rem] inline-flex items-center flex-shrink-0  w-[3.5rem] h-12 ">
             <img src="/tsrep.png"></img>
           </div>
           <span class="sr-only">Info</span>
 
-          <div class="ml-3 text-sm font-medium">Gorgeous Taylor Swift</div>
-          <div className="grid grid-cols-4 gap-72">
-            <div className="ml-40">Reputation</div>
-            <div className="ml-4">13 October</div>
-            <div>
+          <div class="ml-3 w-80 text-sm font-medium">{S.title}</div>
+          <div className="grid grid-cols-5 gap-5">
+            <div>{S.album}</div>
+            <div>{S.date}</div>
+           
+            <div w-4 h->
+            {ishover == songIndex&& (<div className="w-4 h-2">
               <BsSuitHeart />
-            </div>
-            <div>
-              <button>2:11</button>
+            </div>)}
+            {ishover != songIndex&& (<div className="w-4 h-2">
+              
+            </div>)}
+            <div className=" ml-12 w-12">
+              {S.time}
             </div>
           </div>
         </div>
-      )}
+     
+      </div>
     </div>
+     ))}
+     </div>
+    
+   
+  
   );
 };
 
