@@ -58,7 +58,7 @@ const loginpage = () => {
     <><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div><div class="bg-gray-400 p-96 mt-0">
 
       <div class="bg-black rounded-md  md:w-4/4.6 h-96">
-        
+        {/*
 <div class="mt-4 mb-4 m-40 p-20">
   <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
     <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
@@ -90,9 +90,9 @@ const loginpage = () => {
   </button>
 </div>
 
-</div>
+</div> */}
 
-        {/* <div>
+        <div>
           <form>
             <div class="mb-6">
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
@@ -112,7 +112,7 @@ const loginpage = () => {
           </form>
         </div>
 
-      </div> */}
+      </div>
     </div></>
       );
       }

@@ -45,7 +45,7 @@ function Prelogin() {
   return (
     <div className="encl">
       <Card Album={Album} id={Album.id} />
-      <div>{/* <Footer/> */}</div>
+      <div><Footer/></div>
     </div>
   );
 }
