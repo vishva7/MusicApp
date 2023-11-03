@@ -24,7 +24,7 @@ const Songlist = ({song,index}) => {
         
         <div
           
-          class="  flex  w-full ml-[-1rem] h-16 mb-2 p-2 text-white  bg-gray-700 "
+          class="  flex md:w-full md:ml-[-1rem] h-16 mb-2 p-2 text-white  bg-gray-700 "
         >
            {ishover == songIndex&& (<div className="w-3 h-2">
             <BsFillPlayFill size={20} />
