@@ -51,7 +51,6 @@ const loginpage = () => {
         </div>
         <div class="pl-4 ml-15 mt-0">
 
-<<<<<<< HEAD
           <hr class=" h-0.5/2 ml-90 pl-9 mx-16  mt-1  bg-gray-100  md:my-10 dark:bg-white" />
         </div>
 
@@ -94,6 +93,7 @@ const loginpage = () => {
         This site is protected by reCAPTCHA and the Google
         <a href="#" class="font-medium text-white hover:underline text-sm hover:text-black"> Privacy Policy,Terms of Service</a> apply
       </div>
+<<<<<<< HEAD
 =======
       </div>
 
@@ -125,15 +125,13 @@ const loginpage = () => {
       }
 =======
 >>>>>>> 43f61c715da7d4db64a6a28b914f63607cb01859
+=======
+>>>>>>> 4cb8d1e90ab87f9a70b14487e52170c704abc67f
     </div></>
 >>>>>>> 7f87a590f83377f3203e08a7e9beb98a984ccd8c
 
-<<<<<<< HEAD
     
   );
 }
 
 export default loginpage;
-=======
-    export default loginpage;
->>>>>>> 43f61c715da7d4db64a6a28b914f63607cb01859
