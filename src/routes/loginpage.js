@@ -4,12 +4,8 @@
 const loginpage = () => {
   return (
 
-<<<<<<< HEAD
-    <div><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div><div class="bg-gray-400 p-96 mt-0">
-=======
     <><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div>
     <div class="bg-[#24292F] p-64 pt-10 mt-0">
->>>>>>> 7f87a590f83377f3203e08a7e9beb98a984ccd8c
 
       <div class="bg-black rounded-md mt-4 m-28 ml-40 md:w-4/6 h-full">
         <p class="text-4xl font-bold text-green-400 dark:text-white ml-28 pt-10 pl-20 ">Log in to Spotify</p>
@@ -93,8 +89,8 @@ const loginpage = () => {
         This site is protected by reCAPTCHA and the Google
         <a href="#" class="font-medium text-white hover:underline text-sm hover:text-black"> Privacy Policy,Terms of Service</a> apply
       </div>
-<<<<<<< HEAD
-=======
+    =
+
       </div>
 
         <div>
