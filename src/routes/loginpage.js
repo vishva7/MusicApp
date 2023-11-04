@@ -55,7 +55,7 @@
 const loginpage = () => {
   return (
 
-    <><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div><div class="bg-gray-400 p-96 mt-0">
+    <div><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div><div class="bg-gray-400 p-96 mt-0">
 
       <div class="bg-black rounded-md  md:w-4/4.6 h-96">
 
@@ -126,7 +126,8 @@ const loginpage = () => {
         </div>
 
       </div>
-    </div></>
+      </div>
+    
       );
       }
 
