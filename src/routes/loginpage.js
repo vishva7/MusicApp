@@ -4,7 +4,7 @@
 const loginpage = () => {
   return (
 
-    <><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div>
+    <div><div class="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">Spotify</div>
     <div class="bg-[#24292F] p-64 pt-10 mt-0">
 
       <div class="bg-black rounded-md mt-4 m-28 ml-40 md:w-4/6 h-full">
@@ -89,7 +89,7 @@ const loginpage = () => {
         This site is protected by reCAPTCHA and the Google
         <a href="#" class="font-medium text-white hover:underline text-sm hover:text-black"> Privacy Policy,Terms of Service</a> apply
       </div>
-    =
+    
 
       </div>
 
@@ -114,17 +114,10 @@ const loginpage = () => {
         </div>
 
       </div>
-<<<<<<< HEAD
-      </div>
-    
-      );
-      }
-=======
->>>>>>> 43f61c715da7d4db64a6a28b914f63607cb01859
-=======
->>>>>>> 4cb8d1e90ab87f9a70b14487e52170c704abc67f
-    </div></>
->>>>>>> 7f87a590f83377f3203e08a7e9beb98a984ccd8c
+
+   
+   
+
 
     
   );

@@ -3,6 +3,7 @@ import Explore from "./routes/explore";
 import SearchPage from "./routes/searchPage";
 import { useState } from "react";
 import Playlist from "./routes/playlist";
+import SignInPage from "./routes/signinpage";
 
 import {
   BrowserRouter as Router,
@@ -30,6 +31,8 @@ const router = createBrowserRouter(
       </Route>
       <Route>
         <Route path="/loginpage" element={<Loginpage />}></Route>
+        <Route path="/signinpage" element={<SignInPage />}></Route>
+
       </Route>
     </>
   )
