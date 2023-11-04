@@ -26,10 +26,10 @@ const Songlist = ({song,index}) => {
           
           class="  flex md:w-full md:ml-[-1rem] h-16 mb-2 p-2 text-white  bg-gray-700 "
         >
-           {ishover == songIndex&& (<div className="w-3 h-2">
+           {ishover == songIndex&& (<div className="w-4 h-2">
             <BsFillPlayFill size={20} />
           </div>)}
-          {ishover != songIndex&& (<div className="w-3 h-2">
+          {ishover != songIndex&& (<div className="w-4 h-2">
             {S.id}
           </div>)}
           <div class="ml-[0.6rem] inline-flex items-center flex-shrink-0  w-[3.5rem] h-12 ">
@@ -38,11 +38,11 @@ const Songlist = ({song,index}) => {
           <span class="sr-only">Info</span>
 
           <div class="ml-3 w-80 text-sm font-medium">{S.title}</div>
-          <div className="grid grid-cols-5 gap-5">
+          <div className=" ml-12 grid grid-cols-5 gap-5">
             <div>{S.album}</div>
             <div>{S.date}</div>
            
-            <div w-4 h->
+            <div className="ml-20">
             {ishover == songIndex&& (<div className="w-4 h-2">
               <BsSuitHeart />
             </div>)}
