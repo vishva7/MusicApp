@@ -72,7 +72,7 @@ const loginpage = () => {
         </form>
         <div class="ml-64 pl-1">
 
-          <a href="#" class="font-medium text-white hover:underline hover:text-green-400">Forgot your password?</a>
+          <a href="#" class="font-medium text-white hover:underline underline  hover:text-green-400">Forgot your password?</a>
         </div>
 
         <div class="pl-4 ml-15 mt-0">
@@ -80,14 +80,14 @@ const loginpage = () => {
         </div>
 
         <div class="ml-40  pb-10 text-white">Don't have an account?
-          <a href="#" class="font-medium text-white hover:underline hover:text-green-400"> Sign up for Spotify</a>
+          <a href="#" class="font-medium text-white underline hover:underline hover:text-green-400"> Sign up for Spotify</a>
         </div>
       </div>
 
 
       <div class="ml-5 pl-40 mt-2 text-white text-sm">
         This site is protected by reCAPTCHA and the Google
-        <a href="#" class="font-medium text-white hover:underline text-sm hover:text-black"> Privacy Policy,Terms of Service</a> apply
+        <a href="#" class="font-medium text-white  underline hover:underline text-sm hover:text-black"> Privacy Policy,Terms of Service</a> apply
       </div>
     
 
@@ -96,10 +96,7 @@ const loginpage = () => {
       </div>
 
    
-   
-
-
-    
+  
   );
 }
 
