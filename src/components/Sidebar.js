@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Player from "./player";
 const Sidebar = () => {
   return (
     <div class="bg-black ">
@@ -113,7 +114,9 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
+        
       </aside>
+      
     </div>
   );
 };

@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState,useRef } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import { BsSuitHeart } from "react-icons/bs";
+import Player from "./player";
 const Songlist = ({song,index}) => {
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const playMusic = () => {
+    setIsPlaying(!isPlaying);
+    if (audioRef.current) {
+      if (!isPlaying) {
+        audioRef.current.play(); // Start playing
+      } else {
+        audioRef.current.pause(); // Pause if it's already playing
+      }
+    }
+  };
  
   const [ishover, setHover] = useState(null);
   const handleentry = (index) => {
@@ -27,7 +41,7 @@ const Songlist = ({song,index}) => {
           class="  flex md:w-full md:ml-[-1rem] h-16 mb-2 p-2 text-white  bg-gray-700 "
         >
            {ishover == songIndex&& (<div className="w-4 h-2">
-            <BsFillPlayFill size={20} />
+           <button onClick={playMusic}> <BsFillPlayFill size={20} /></button>
           </div>)}
           {ishover != songIndex&& (<div className="w-4 h-2">
             {S.id}
@@ -56,8 +70,27 @@ const Songlist = ({song,index}) => {
         </div>
      
       </div>
+      <audio
+        ref={audioRef} // Assign the reference to the audio element
+        src={S.src}
+        controls
+        style={{
+          width: "100%",
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          backgroundColor: "black",
+          zIndex: 1000,
+        }}
+      ></audio>
+
     </div>
+    
      ))}
+     
+      
+     export default ;
+      
      </div>
     
    
