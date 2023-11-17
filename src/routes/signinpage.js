@@ -4,15 +4,15 @@ import axios from "axios";
 
 const SignInPage = () => {
   let navigate = useNavigate();
-  let [name, setName] = useState("");
+  // let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await axios.post("http://localhost:2000/api/signup", {
-        name: name,
+      let response = await axios.post("http://localhost:8000/auth/register", {
+        
         email: email,
         password: password,
       });
@@ -50,6 +50,9 @@ const SignInPage = () => {
             class="bg-[#24292F] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="name@email.com"
             required
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
         </div>
         <div class="ml-28 pl-14 mt-3 mb-5">
@@ -64,7 +67,8 @@ const SignInPage = () => {
             id="email"
             class="bg-[#24292F] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Enter your password"
-            required
+            required onChange={(e) => {
+              setPassword(e.target.value);}}
           />
         </div>
         <div class="ml-64 center mr-28 pl-5 mb-7">

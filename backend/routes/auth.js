@@ -9,7 +9,7 @@ router.post("/register", async (req, res)=>{
     // my req.body will be of the format {email, password, firstName, lastName, username} -- req contains the information required for 
     // that request.
     // Step 1 : save the content of req.body in a variable
-    const {email, password, firstName, lastName, userName} = req.body;
+    const {email, password} = req.body;
 
     //Step 2 : check whether the user details already exists or not? if yes we throw an error -- findOne method to check the particular email id
 
@@ -28,7 +28,7 @@ router.post("/register", async (req, res)=>{
     // the catch is if we keep those 2 parameters same , the plain text will always result in same hash
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const newUserData = {email, password : hashedPassword, firstName, lastName, userName};
+    const newUserData = {email, password : hashedPassword};
     const newUser = await User.create(newUserData);
 
     // Step 4 : we want to create a Token to return to the user
@@ -45,6 +45,7 @@ router.post("/register", async (req, res)=>{
 router.post("/login", async (req, res)=> {
     //Step 1 : Get the email and password from req.body
     const {email, password}= req.body;
+    console.log(email,password)
 
     //Step 2 : check whether the email exists. If not then invalid credentials
     const user= await User.findOne({email : email});

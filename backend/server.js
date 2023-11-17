@@ -58,15 +58,7 @@ app.use(express.json()); // this is to tell express whatever value we are gettin
 // connect mongodb to the node app
 //mongoose.connect() has two arguments : 1. Which db to connect to (db url) 2. Connection options
 
-mongoose.connect(
-    "mongodb+srv://admin:"+
-        process.env.MONGO_PASSWORD+
-        "@cluster0.pyvfpn0.mongodb.net/?retryWrites=true&w=majority", 
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }
-)
+mongoose.connect(process.env.MONGODB_URI)
 .then((x)=>{
     console.log("Connected to Mongodb");
 })

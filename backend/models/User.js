@@ -5,7 +5,8 @@ const mongoose = require("mongoose");
 //Step 3 : create a model
 
 const User = new mongoose.Schema({
-    firstName:{
+    
+    email: {
         type: String,
         required : true,
     },
@@ -14,32 +15,26 @@ const User = new mongoose.Schema({
         required: true,
         private: true,
     },
-    lastName:{
-        type: String,
-        required : false,
-    },
-    email: {
-        type: String,
-        required : true,
-    },
-    userName: {
-        type: String,
-        required: true,
-    },
-    likedSongs: {
-        // we will change the datatype in future
-        type: String,
-        default:"",
-    },
-    likedPlaylists: {
-        type: String,
-        default: "",
-    },
 
-    subscribedArtists:{
-        type:String,
-        default: "",
-    },
+    
+    // userName: {
+    //     type: String,
+    //     required: true,
+    // },
+    // likedSongs: {
+    //     // we will change the datatype in future
+    //     type: String,
+    //     default:"",
+    // },
+    // likedPlaylists: {
+    //     type: String,
+    //     default: "",
+    // },
+
+    // subscribedArtists:{
+    //     type:String,
+    //     default: "",
+    // },
 
 });
 
