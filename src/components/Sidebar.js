@@ -1,6 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import Player from "./player";
+import { useRef } from "react";
 const Sidebar = () => {
+  const audioRef = useRef(null);
   return (
     <div class="bg-black ">
       <button
@@ -116,6 +118,18 @@ const Sidebar = () => {
         </div>
         
       </aside>
+      <audio
+        ref={audioRef}
+        controls
+        style={{
+          width: "100%",
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          backgroundColor: "black",
+          zIndex: 1000,
+        }}
+      ></audio>
       
     </div>
   );

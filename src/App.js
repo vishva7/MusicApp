@@ -7,6 +7,8 @@ import SignInPage from "./routes/signinpage";
 
 
 
+
+
 import {
   BrowserRouter as Router,
   Route,
@@ -41,7 +43,10 @@ const router = createBrowserRouter(
 );
 function App() {
   return (
-    <RouterProvider router={router} /> //have to import
+   
+    
+    <RouterProvider router={router} />
+  
   );
 }
 export default App;

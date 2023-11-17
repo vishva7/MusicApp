@@ -4,7 +4,9 @@ import { BsSuitHeart } from "react-icons/bs";
 import Player from "./player";
 
 
+
 const Songlist = ({ song, index }) => {
+  
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSongIndex, setCurrentSongIndex] = useState(null);
@@ -99,7 +101,6 @@ const Songlist = ({ song, index }) => {
           position: "fixed",
           bottom: 0,
           left: 0,
-          backgroundColor: "black",
           zIndex: 1000,
         }}
       ></audio>
