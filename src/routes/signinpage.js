@@ -7,7 +7,10 @@ const SignInPage = () => {
   // let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
-
+  const history = useNavigate();
+  function handleClick() {
+    history("/loginpage"); // Replace "/new-page" with the path of the page you want to navigate to
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -19,7 +22,7 @@ const SignInPage = () => {
       console.log(response.data);
       if (response.data) {
         localStorage.setItem("user", JSON.stringify(response.data));
-        navigate("/Login");
+        navigate("/loginpage");
       }
     } catch (err) {
       console.log(err);
@@ -29,10 +32,10 @@ const SignInPage = () => {
   return (
     <div class="bg-black h-screen w-full">
       <div class=" ml-80  pt-20   p-8 pl-60">
-        <p class="text-4xl font-bold text-green-400 dark:text-white ">
+        <p class="text-4xl font-bold text-blue-400 dark:text-white ">
           Sign up to
         </p>
-        <p class="text-4xl font-bold text-green-400 dark:text-white ">
+        <p class="text-4xl font-bold text-blue-400 dark:text-white ">
           start Listening
         </p>
       </div>
@@ -74,9 +77,10 @@ const SignInPage = () => {
         <div class="ml-64 center mr-28 pl-5 mb-7">
           <button
             type="submit"
-            class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-80 sm:w-auto px-10 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            class="text-white bg-blue-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-80 sm:w-auto px-10 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            onClick={handleSubmit}
           >
-            Next
+            Sign Up
           </button>
         </div>
         <div class="pl-16 ml-20  text-white">
@@ -153,5 +157,4 @@ const SignInPage = () => {
     </div>
   );
 };
-
 export default SignInPage;

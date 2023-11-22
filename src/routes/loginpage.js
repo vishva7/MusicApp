@@ -6,19 +6,22 @@ export default function LoginPage() {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let navigate = useNavigate();
-
+  const history = useNavigate();
+  function handleClick() {
+    history("/explore"); // Replace "/new-page" with the path of the page you want to navigate to
+  }
   let handleLogin = async (e) => {
     console.log(email, password);
     e.preventDefault();
     try {
-      let response = await axios.post("http://localhost:2000/api/login", {
+      let response = await axios.post("http://localhost:8000/auth/login", {
         email: email,
         password: password,
       });
       if (response.data) {
         console.log(response.data);
         localStorage.setItem("user", JSON.stringify(response.data));
-        navigate("/");
+        navigate("/explore");
       }
     } catch (err) {
       console.log(err);
@@ -27,13 +30,13 @@ export default function LoginPage() {
 
   return (
     <div>
-      <div className="bg-black h-24 text-white text-lg font-sans flex items-center justify-start p-4 w-full">
-        Spotify
+      <div className="bg-black h-24 text-white text-2xl font-bold flex items-center justify-start p-8 w-full">
+        MusicNext
       </div>
       <div className="bg-[#24292F] p-64 pt-10 mt-0">
         <div className="bg-black rounded-md mt-4 m-28 ml-40 md:w-4/6 h-full">
-          <p className="text-4xl font-bold text-green-400 dark:text-white ml-28 pt-10 pl-20">
-            Log in to Spotify
+          <p className="text-4xl font-bold text-blue-400 dark:text-white ml-20 pt-10 pl-20">
+            Log in to MusicNext
           </p>
           <div className=" mb-4  pl-48 pt-6">
             <div>
@@ -169,8 +172,9 @@ export default function LoginPage() {
             <div className="ml-64 center mr-28 pl-5 mb-7">
               <button
                 type="submit"
-                className="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-80 sm:w-auto px-10 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                className="text-white bg-blue-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-80 sm:w-auto px-10 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                 onSubmit={handleLogin}
+                // onClick={handleClick}
               >
                 Log in
               </button>
@@ -196,7 +200,7 @@ export default function LoginPage() {
               className="font-medium text-white underline hover:underline hover:text-green-400"
             >
               {" "}
-              Sign up for Spotify
+              Sign up for MusicNext
             </a>
           </div>
         </div>
