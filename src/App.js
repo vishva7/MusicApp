@@ -9,10 +9,6 @@ import Playlist4 from "./routes/playlist4";
 import Playlist5 from "./routes/playlist5";
 import SignInPage from "./routes/signinpage";
 
-
-
-
-
 import {
   BrowserRouter as Router,
   Route,
