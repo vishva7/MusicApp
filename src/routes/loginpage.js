@@ -10,7 +10,7 @@ export default function LoginPage() {
   function handleClick() {
     history("/explore"); // Replace "/new-page" with the path of the page you want to navigate to
   }
-  let handleLogin = async (e) => {
+  const handleLogin = async (e) => {
     console.log(email, password);
     e.preventDefault();
     try {

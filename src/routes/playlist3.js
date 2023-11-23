@@ -3,7 +3,7 @@ import { useState } from "react";
 const Playlist1 = () => {
     
     const [song, setSong] = useState([
-        { title: "Dangerous Women", album: "Dangerous Women", date: "13 october",src:"Music/Ariana Grande - Dangerous Woman.mp3" ,time: "3:11", id: 1, img: "/drive.jpg" },{ title: "Wildest Dreams", album: "1989", date: "13 october",src:"/Taylor Swift - Wildest Dreams (Taylor’s Version) (Official Audio)_160k.mp3" ,time: "3:11", id: 1, img: "/tsrep.png" },
+        { title: "Dangerous Women", album: "Dangerous Women", date: "13 october",src:"Music/Ariana Grande - Dangerous Woman.mp3" ,time: "3:11", id: 1, img: "/drive.jpg" },{ title: "You were born", album: "1989", date: "13 october",src:"Music/You Were Born Lyrics - Cloud Cult.mp3" ,time: "3:11", id: 1, img: "/tsrep.png" },
         { title: "Falling", album: "Line", date: "13 october",src:"Music/Harry Styles - Falling (Lyrics).mp3",time: "3:11", id: 2, img: "/tsrep.png" },
         { title: "Matilda", album: "Harry's House", date: "13 october", src:"Music/Harry Styles - Matilda (Audio).mp3",time: "3:11", id: 3, img: "/tsrep.png" },
         { title: "Innocence", album: "Avril", date: "13 october", src:"Music/inocense-avril.mp3",time: "3:11", id: 4, img: "/tsrep.png" },
