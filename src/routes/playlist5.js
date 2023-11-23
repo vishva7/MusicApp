@@ -3,16 +3,17 @@ import { useState } from "react";
 const Playlist1 = () => {
     
     const [song, setSong] = useState([
-        { title: "Say you wont let go", album: "James Arthur", date: "13 october",src:"Music/James Arthur - Say You Won't Let Go.mp3" ,time: "3:11", id: 1, img: "/drive.jpg" },{ title: "Wildest Dreams", album: "1989", date: "13 october",src:"/Taylor Swift - Wildest Dreams (Taylor’s Version) (Official Audio)_160k.mp3" ,time: "3:11", id: 1, img: "/tsrep.png" },
-        { title: "Bring you Back", album: "Gold Brothers", date: "13 october",src:"Music/Gold Brother x LIIV - Bring You Back.mp3",time: "3:11", id: 2, img: "/tsrep.png" },
-        { title: "Castle on the hill", album: "Ed Sheeran", date: "13 october", src:"Music/Ed Sheeran - Castle On The Hill [Official Video].mp3",time: "3:11", id: 3, img: "/tsrep.png" },
-        { title: "I wanna be that way", album: "Backstreet Boys", date: "13 october", src:"Music/Backstreet_Boys_I_Want_It_That_Way.mp3",time: "3:11", id: 4, img: "/tsrep.png" },
-        { title: "Don't Give me up", album: "Single", date: "13 october", src:"Music/Andy Grammer - Don't Give Up On Me [Official Video from the Five Feet Apart Film].mp3",time: "3:11", id: 5, img: "/tsrep.png" },
-        { title: "Prophets", album: "A.C.Newman", date: "13 october", src:"Music/A.C. Newman - Prophets.mp3",time: "3:11", id: 6, img: "/tsrep.png" },
-        { title: "How to save a life", album: "How to Save a Life", date: "13 october",src:"Music/The Fray - How to Save a Life (Official Video).mp3", time: "3:11", id: 7, img: "/tsrep.png" },
-        { title: "I wanna love you", album: "Akon", date: "13 october",src:"Music/Akon - I Wanna Love You.mp3", time: "3:11", id: 8, img: "/tsrep.png" },
-        { title: "Tired", album: "Alan Walker", date: "13 october", src:"Music/Alan Walker ft. Gavin James - Tired.mp3",time: "3:11", id: 9, img: "/tsrep.png" },
-        { title: "Fairy Tale", album: "Taylor Swift", date: "13 october", src:"Music/fairy tale-taylor swift.mp3",time: "3:11", id: 10, img: "/tsrep.png" },
+        { title: "Bombe helutaite", album: "Vijayprakash", date: "13 october",src:"Music/Bombe Helutaite - Raajakumara_128-(DJMaza).mp3" ,time: "3:11", id: 1, img: "Bombe Helutaite.jpg" },
+        { title: "Santhoshakke haadu shanthoshakke", album: "SPB", date: "13 october",src:"Music/baa111557fa9271b3a05b19943996d6b_320.m4a", time: "3:11", id: 1, img: "santhoshakke.jpg" },
+        { title: "Arere Avala Naguva ", album: "Vasuki Vaibhav", date: "13 october",src:"Music/Arere-Avala-Naguva-Vasuki-Vaibhav.mp3" ,time: "3:11", id: 2, img: "Arere-Avala-Naguva.jpg" },
+        { title: "Salaam Rocky Bhai", album: "Ravi Basrur-Vijayprakash", date: "13 october",src:"Music/Salaam-Rocky-Bhai-Vijay-Prakash-Puneeth-Rudranag-H.-Shreenivas-Moorthi-Sachin-Basrur-Vijay-Urs-Santhosh-Mohan.mp3",time: "3:11", id: 3, img: "Salaam-Rocky-Bhai.jpg" },
+        { title: "Singara Siriye(kantara)", album: "Vijayprakash", date: "13 october", src:"Music/Singara-Siriye(PaglaSongs).mp3",time: "3:11", id: 4, img: "Singara-Siriye(kantara).jpg" },
+        { title: "Belageddu(Kirik party)", album: "Vijayprakash", date: "13 october", src:"Music/Belageddu-Vijay-Prakash.mp3",time: "3:11", id: 5, img: "Belageddu.jpg" },
+        { title: "Last-benchparty", album: "Chandan achar", date: "13 october", src:"Music/Last-Benchu-Party-Chintan-Vikas-Chandan-Achar-Varun-Ramachandra.mp3",time: "3:11", id: 6, img: "lastbenchparty.jpg" },
+        { title: "Jagavae neenu gelatiye", album: "Sid Sriram", date: "13 october", src:"Music/Jagave-Neenu.mp3",time: "3:11", id: 7, img: "jagave-Neenu.jpg" },
+        { title: "Happy aagide", album: "Allok", date: "13 october",src:"Music/[iSongs.info] 01 - Happy.mp3", time: "3:11", id: 8, img: "happy.jpg" },
+        { title: "Just maatmatalli", album: "Raghu dixit", date: "13 october", src:"Music/1034328e8e21a6819f3f9c19fbc70c88_320.m4a",time: "3:11", id: 9, img: "jst math mathalli.jpg" },
+        { title: "Toofan(KGF)", album: "Ravi basur", date: "13 october", src:"Music/Toofan (KGF 2)_64-(PagalWorld.Ink).mp3",time: "3:11", id: 10, img: "toofan(kgf).jpg" },
         ]);
     return ( 
         <Songlist song={song} id={song.id}/>

@@ -35,9 +35,9 @@ function Prelogin() {
       img: "/album1.webp",
     },
     {
-      title: "Chill Hits",
+      title: "Kannada Hits",
       body: "Viona",
-      author: "Kick back to the best new and recent chill...",
+      author: "The best epic playlist of all time",
       id: 4,
       img: "/album1.webp",
     },
