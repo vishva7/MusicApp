@@ -73,7 +73,7 @@ const Songlist = ({ song, index }) => {
             {ishover !== songIndex && <div className="w-4 h-2">{S.id}</div>}
             
             <div className="ml-[0.6rem] inline-flex items-center flex-shrink-0 w-[3.5rem] h-12 ">
-              <img src="/tsrep.png" alt="album cover"></img>
+              <img src={S.img} alt="album cover"></img>
             </div>
             <span className="sr-only">Info</span>
             <div className="ml-3 w-80 text-sm font-medium">{S.title}</div>

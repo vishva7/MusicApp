@@ -14,8 +14,8 @@ const Card = ({ Album, id }) => {
     setHoveredCardIndex(null);
   };
 
-  const handleClick = () => {
-    history("/playlist"); // Replace "/new-page" with the path of the page you want to navigate to
+  const handleClick = (index) => {
+    history(`/playlist${index+1}`); // Replace "/new-page" with the path of the page you want to navigate to
   };
 
   return (
@@ -25,7 +25,7 @@ const Card = ({ Album, id }) => {
           className="relative bg-black rounded-lg shadow-lg md:w-48"
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
-          onClick={handleClick}
+          onClick={()=>{handleClick(index)}}
           key={index}
         >
           <div className="px-3 pb-3 pt-3">
