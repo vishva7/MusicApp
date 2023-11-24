@@ -26,9 +26,9 @@ function Explore() {
       img: "/album1.webp",
     },
     {
-      title: "Rap Caviar",
+      title: "TOP HINDI HITS",
       body: "Peeta",
-      author: "Music from Lil Tecca,Lil Uzi Vert and Gucci Mane",
+      author: "Music to get you grooving...",
       id: 2,
       img: "/album1.webp",
     },
@@ -47,9 +47,9 @@ function Explore() {
       img: "/album1.webp",
     },
     {
-      title: "Chill Hits",
+      title: "Kannada Hits",
       body: "Viona",
-      author: "Kick back to the best new and recent chill...",
+      author: "The best epic playlist of all time...",
       id: 4,
       img: "/album1.webp",
     },
@@ -64,7 +64,7 @@ function Explore() {
       </div>
 
       <div className="pt-12">
-        <div className="text-white pb-4 text-3xl">
+        <div className="text-white pb-20 text-3xl">
           <p>
             <b>Top Mixes:</b>
           </p>

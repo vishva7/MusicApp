@@ -116,7 +116,7 @@ export default function LoginPage() {
 
           {/* <div className ="mt-4 mb-4 m-40 p-20 relative"> */}
           <form className="mt-0">
-            <div className="ml-28 pl-14 mt-3 mb-6">
+            <div className="ml-28 pl-14 mt-3 mb-6 text-white-800">
               <label
                 htmlFor="email"
                 className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -126,7 +126,7 @@ export default function LoginPage() {
               <input
                 type="email"
                 id="email"
-                className="bg-[#24292F] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-[#24292F] border border-gray-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@email.com"
                 required
                 onChange={(e) => {
@@ -134,17 +134,17 @@ export default function LoginPage() {
                 }}
               />
             </div>
-            <div className="ml-28 pl-14 mb-6">
+            <div className="ml-28 pl-14 mb-6 text-white">
               <label
                 htmlFor="password"
-                className="block mb-2 text-sm font-medium text-white dark:text-grey"
+                className="block mb-2 text-sm font-medium text-white dark:text-white"
               >
                 Password
               </label>
               <input
                 type="password"
                 id="password"
-                className="bg-[#24292F] border border-gray-300 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-[#24292F] border border-gray-300 text-white-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-white dark:focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Password"
                 required
                 onChange={(e) => {
